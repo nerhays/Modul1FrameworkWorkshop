@@ -14,8 +14,8 @@
       </a>
       <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="/Buku">Buku</a></li>
-          <li class="nav-item"> <a class="nav-link" href="/Kategori">Kategori</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{{ route('buku.index') }}">Buku</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{{ route('kategori.index') }}">Kategori</a></li>
         </ul>
       </div>
     </li>
