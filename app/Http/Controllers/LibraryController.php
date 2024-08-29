@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Kategori;
 use App\Models\Buku;
 
+use Illuminate\Support\Facades\Auth;
+
 class LibraryController extends Controller
 {
     public function index()
