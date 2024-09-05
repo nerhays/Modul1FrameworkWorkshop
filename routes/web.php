@@ -22,8 +22,8 @@ Route::get('/register', function(){
 })->name('register.form');
 Route::post('/register', [RegisterController::class, 'store'])->name('register');
 
-Route::get('kategori', [KategoriController::class, 'index'])->name('kategori.index');
+Route::get('kategori', [KategoriController::class, 'index'])->name('kategori.index')->middleware(LoginMiddelware::class);
 Route::post('kategori', [KategoriController::class, 'store'])->name('kategori.store');
 
-Route::get('buku', [BukuController::class, 'index'])->name('buku.index');
+Route::get('buku', [BukuController::class, 'index'])->name('buku.index')->middleware(LoginMiddelware::class);
 Route::post('buku', [BukuController::class, 'store'])->name('buku.store');
